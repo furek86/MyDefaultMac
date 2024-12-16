@@ -16,7 +16,7 @@ HISTSIZE=10000
 SAVEHIST=50000
 
 # Aliases for custom commands
-alias ls="eza -liah"
+alias ls="eza --long --color=always --icons=always --no-user" 
 alias cat="bat"
 
 # Aliases for custom locations
@@ -35,5 +35,12 @@ umount_ndrive() {
 
 NDrive() {
   cd /Users/jfuczek/Chatham/N_Drive/ADCFileServer/
+}
+
+backup_my_configs() {
+  cp ~/.zshrc ~/Personal_Store/GitHub/MyDefaultMac/dotfiles/.zshrc
+  cp ~/.tmux.conf ~/Personal_Store/GitHub/MyDefaultMac/dotfiles/.tmux.conf
+  cp ~/.config/starship.toml ~/Personal_Store/GitHub/MyDefaultMac/dotfiles/starship.toml
+  cp ~/.config/kitty/kitty.conf ~/Personal_Store/GitHub/MyDefaultMac/dotfiles/kitty/kitty.conf
 }
 
