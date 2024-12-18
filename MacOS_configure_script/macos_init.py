@@ -13,7 +13,8 @@ def main():
 
     # Next, we install some essential packages
     print("Installing essential packages...")
-    os.system("brew install git zsh zsh-completions bat exa fzf ripgrep tmux neovim gnupg pinentry-mac gtop oh-my-zsh starship kitty")
+    os.system("brew install git zsh zsh-completions bat exa fzf ripgrep tmux neovim gnupg pinentry-mac gtop oh-my-zsh starship kitty fd")
+    os.system("git clone git@github.com:junegunn/fzf-git.sh.git ~/")
     print("Essential packages installed successfully!")
 
     # Next, we install some nerd fonts
